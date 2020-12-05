@@ -91,7 +91,7 @@ def parse(img):
 
     model = networks.init_model('resnet101', num_classes=num_classes, pretrained=None)
 
-    state_dict = torch.load('/home/rajat/workspace/exp-schp-201908261155-lip.pth')['state_dict']
+    state_dict = torch.load('exp-schp-201908261155-lip.pth')['state_dict']
     from collections import OrderedDict
     new_state_dict = OrderedDict()
     for k, v in state_dict.items():
